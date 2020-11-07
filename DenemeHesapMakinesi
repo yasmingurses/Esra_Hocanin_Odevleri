@@ -1,0 +1,34 @@
+# OLMADI
+
+#Hedef 4 işlem yapan hesap makinesi yaratmak
+
+x = int(input("Birinci sayıyı giriniz: "))
+
+y = int(input("İkinci sayıyı giriniz: "))
+
+z = input("Operatör giriniz: ")
+
+#Amaç sayı girildiğini kontrol etmek
+while x.isdigit() == True and y.isdigit() == True :
+
+    if z == "+" :
+          cevap = x + y
+          print("Sonuç : ", cevap)
+
+    elif z == "-" :
+          cevap = x - y
+          print("Sonuç : ", cevap)
+
+    elif z == "/" :
+          cevap = x / y
+          print("Sonuç : ", cevap)
+
+    elif z == "*" :
+          cevap = x * y
+          print("Sonuç : ", cevap)
+    else :
+        print("4 operatörden birini girmelisiniz!")
+
+
+#Sayı girilmediyse başa dönmeli
+print("Sayı girmelisiniz!")
